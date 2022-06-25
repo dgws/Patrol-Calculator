@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-41983650-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-41983650-1');
+</script>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:site_name" content="Калькулятор расхода топлива">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link sizes="90x90" rel="apple-touch-icon" href="https://des1re.com/patrolcalc/apple-touch-icon-90x90.png">
+	<link sizes="180x180" rel="apple-touch-icon" href="https://des1re.com/patrolcalc/apple-touch-icon-180x180.png">
+
+
+    <title>Калькулятор &nbsp; расхода топлива</title>
+</head>
+
+<body>
+
+	<form>
+        <div class="container">
+		<div class="row mb-3 ">
+			<div class="form-group col-md-12 col-sm-12">
+				<p class="badge bg-secondary">Расстояние / Distance (km)</p>
+				<input type="text" name="rast" class="form-control" id="rast" required="" placeholder="800" required="" />
+			</div>
+        
+				<div class="form-group col-md-12 col-sm-12">
+					<p class="badge bg-secondary">Сколько литров на 100 км / Verbruik liters per 100 km</p>
+					<input type="text" name="date" class="form-control" id="weight" required="" placeholder="7" required="" />
+				</div>
+            
+                
+               
+				<div class="form-group col-md-12 col-sm-12">
+					<p class="badge bg-secondary">Цена за литр / Prijs per liter</p>
+					<input type="text" name="adress" id="vol" class="form-control" placeholder="1.5" required="" />
+				</div>
+                
+			</div>
+        
+    
+		<div class="row col-12 mb-3"><span id="out">0.0</span> <span class="rub">Литры / Liters</span></div>
+		<div class="row col-12 mb-3"><span id="eur">0.0</span> <span class="eur">Цена / Prijs</span></div>
+		<div class="row">
+			<div class="col-md-2 col-12">
+				<input type="button" name="adress" id="btn" class="btn btn-lg btn-primary" value="Считать / Calculate" />
+			</div>
+		</div>
+        </div>
+	</form>
+    <script src="calc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
