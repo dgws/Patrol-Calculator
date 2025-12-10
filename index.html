@@ -31,19 +31,19 @@
 		<div class="row mb-3 ">
 			<div class="form-group col-md-12 col-sm-12">
 				<p class="badge bg-secondary">Расстояние / Distance (km)</p>
-				<input type="number" name="rast" class="form-control" id="rast" required="" placeholder="800" required="" />
+				<input type="number" name="rast" class="form-control" id="rast" required="" placeholder="800" required="" pattern="[0-9,]*" inputmode="decimal" />
 			</div>
         
 				<div class="form-group col-md-12 col-sm-12">
 					<p class="badge bg-secondary">Сколько литров на 100 км / Verbruik liters per 100 km</p>
-					<input type="number" name="date" class="form-control" id="weight" required="" placeholder="7" required="" />
+					<input type="number" name="date" class="form-control" id="weight" required="" placeholder="7" required=""pattern="[0-9,]*" inputmode="decimal"/>
 				</div>
             
                 
                
 				<div class="form-group col-md-12 col-sm-12">
 					<p class="badge bg-secondary">Цена за литр / Prijs per liter</p>
-					<input type="number" name="adress" id="vol" class="form-control" placeholder="1.5" required="" />
+					<input type="number" name="adress" id="vol" class="form-control" placeholder="1.5" required="" pattern="[0-9,]*" inputmode="decimal"/>
 				</div>
                 
 			</div>
